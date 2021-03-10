@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html ng-app="MyOrder">
+	<head>
+		<title></title>	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="StyleSheet\Style.css">
+		<link rel="stylesheet" type="text/css" href="StyleSheet\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="angular/angular.min.js"></script>
+    <script src="order.js"></script>
+		<link rel="stylesheet" type="text/css" href="StyleSheet\font-awesome-4.7.0\css\font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="StyleSheet\footbar.css">
+		<style type="text/css">
+			.navbar {
+    border: none;
+    background-color: #fdd31d;
+    min-height: 80px;
+}
+
+a:hover {
+    background-color: #e20086;
+}
+		</style>
+	</head>
+	<body>
+		
+		<!-----------------to display offers------------------------->
+
+		<div class="container-fluid" style=" height: auto; background-color:#e20086 ">
+			<div class="row">
+				<div class="col-lg-4" >					
+					<h1 style = "text-align: center; font-family: Georgia; font-size: 50px; color: #fdd31d"><b><i>eventCart</i></b></h1>					
+				</div>
+
+				<!---------------------------BRAND NAME, SEARCH BAR, CART, SIGNUP----------------------------------------->
+
+				<div class="col-lg-4">
+					<div style= "padding-top: 10px;">
+						<div class="navbar-form">
+							<div class="input-group">
+								<input type="text" name="" class="form-control" style="width: 500px" placeholder="search a vender or product">
+								<div class="input-group-btn">
+									<button class="btn btn-default button" type="submit"><i  class="glyphicon glyphicon-search"></i></button>
+								</div>
+							</div>							
+					   </div>
+				    </div>
+				</div>
+				<div class="col-lg-4">
+					<ul class="nav navbar-nav navbar-right" style=" color:#fdd31d; padding-top: 10px;">
+						<li><a href="#"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> &nbsp;Cart</a></li>
+						<li><a href="Signup.html" ><i class="fa fa-user fa-2x"></i> &nbsp;Signup </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<!-------------------------------------NAV BAR- home, shop, review, blog, contact  us------------------------------------->
+
+	<div class="container-fluid" > 
+	<div class="row" >			
+			<div class="navbar navbar-default navbar-inverse" >
+				<div class="navbar-header" style="margin-left: 100px">
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#nav1" >
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+
+<!-------------------------------------Navigation items------------------------------------------------------------------>
+
+			<div class="navbar-collapse" id="nav1">					<
+					<ul class="nav navbar-nav navbarcenter" style= "z-index: 1">
+						<li ><a href="index.html">Home</a></li>
+						<li class= "dropdown"><a href="#" data-toggle="dropdown">Shop <span class="caret"></span></a>
+                             <ul class="dropdown-menu" style="background-color: #fdd31d">
+                             	<li><a href="findVender.html">vender</a></li>
+                                    <li><a href="DIY.html">product</a></li>
+                             </ul>
+						</li>
+						<li><a href="review.html">Write a Review</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+<!--------------------------------------------register as a customer------------------------------------------------->
+
+<div class="container">
+      <div class="row" >
+        <h1><b>Register As A Customer</b></h1>
+        <div class="col-lg-12">
+          <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" data-target="#Det" href="#" class="active">Details</a></li>
+            <li><a data-toggle="tab" data-target="#Add" href="#">Address</a></li>
+            <li><a data-toggle="tab" data-target="#Crd" href="#">Card Information</a></li>
+            <li><a data-toggle="tab" data-target="#Ord" href="#">Orders</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade active" id="Det">
+              <div class="container">
+                <div class="row" >
+                  <div class="col-lg-8 col-lg-offset-2" style="margin-top: 100px; margin-left: 30px">
+                    <div class="col-lg-6" style="padding: 30px; height: 550px; box-sizing: border-box; width: 50%; border: 5px solid yellow;">
+                      <h1 style="text-align: center; color: Black"> Update your Details</h1>
+                      <div class="form-group">
+                        <label style="color: #e75480" > Email:</label>
+                        <input type="email" name="" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label style="color: #e75480" >First name</label>
+                        <input type="First Name" name="" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label style="color: #e75480" >Last name</label>
+                        <input type="Lname" name="" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label style="color: #e75480" >Password</label>
+                        <input type="email" name="" class="form-control">
+                      </div>
+                      <button class="btn btn-primary" style="background-color: #e75480">Update</button>
+                      <button class="btn btn-primary" style="background-color: #e75480">Skip</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!--------------------------------------------------->
+
+<div class="tab-pane fade" id="Add">
+  <div class="container">
+    <div class="row" >
+      <div class="col-lg-8 col-lg-offset-2" style="margin-top: 100px; margin-left: 30px">
+        <div class="col-lg-6" style="padding: 30px; height: 900px; box-sizing: border-box; width: 50%; border: 5px solid yellow;">
+          <h1 style="text-align: center; color: Black"> Add an Address</h1>
+          <div class="form-group">
+            <label style="color: #e75480" >First name</label>
+            <input type="First Name" name="" class="form-control" >
+          </div>
+
+          <div class="form-group">
+            <label style="color: #e75480" >Last name</label>
+            <input type="Lname" name="" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label style="color: #e75480" >House No.</label>
+            <input type="email" name="" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label style="color: #e75480" >Street</label>
+            <input type="email" name="" class="form-control">
+          </div>
+          <div>
+            <label style="color: #e75480" >City</label>
+            <input type="email" name="" class="form-control">
+          </div>
+        <div class="form-group">
+          <label style="color: #e75480" >State</label>
+          <input type="email" name="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label style="color: #e75480" >Pin Code</label>
+          <input type="email" name="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label style="color: #e75480" >Contact No.</label>
+          <input type="email" name="" class="form-control">
+        </div>
+        <button class="btn btn-primary" style="background-color: #e75480">Update</button>
+        <button class="btn btn-primary" style="background-color: #e75480">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!----------------------------------------add card details-------------->
+<div class="tab-pane fade" id="Crd">
+<div class="container">
+  <div class="row" >
+    <div class="col-lg-8 col-lg-offset-2" style="margin-top: 100px; margin-left: 30px">
+      <div class="col-lg-6" style="padding: 30px; height: 500px; box-sizing: border-box; width: 50%; border: 5px solid yellow;">
+        <h1 style="text-align: center; color: Black"> Add Card Details</h1>
+        <div class="form-group">
+          <label style="color: #e75480" >Card homder name:</label>
+          <input type="email" name="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label style="color: #e75480" >Card expiry:</label>
+          <input type="Month" name="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label style="color: #e75480" >Card number</label>
+          <input type="Enter 16 digit card Number" name="" class="form-control">
+        </div>
+          <button class="btn btn-primary" style="background-color: #e75480">Update</button>
+          <button class="btn btn-primary" style="background-color: #e75480">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------Check order status and history----------->
+<!-- <div class="tab-pane fade" id="Ord">
+  <div class="container">
+    <div class="row" >
+      <div ng-controller="MyOrder" class="col-lg-8 col-lg-offset-2" style="margin-top: 100px; margin-left: 30px">
+          <h1 style="text-align: center; color: #e20086">{{Message}}</h1>
+          <div ng-controller="Details">
+            <table border="1" class="table table-bordered table-hover" style="color:#e75480 ">
+              <tr>
+               <th>Order id</th>
+                <th>Placed on</th>
+                <th>Status</th>
+                <th>Total Value</th>
+                <th>No. of Items</th>
+                <th>Edit</th>
+              </tr>
+              <tr ng-repeat="o in Orders">
+                <td>{{o.order_id}}</td>
+                <td>{{o.place_on_date}}</td>
+                <td>{{o.order_status}}</td>
+                <td>{{o.total_value|currency}}</td>
+                <td>{{o.no_of_items}}</td>
+                <td><button class="btn btn-primary">Details</button>&nbsp;&nbsp;<button class="btn btn-danger">Delete</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+<div class="tab-pane fade" id="Ord">
+      <div ng-controller="MyCon" class="col-lg-8 col-lg-offset-2" style="margin-top: 100px; margin-left: 30px" ng-controller="MyOrder">
+         <h1 style="text-align: center; color: #e20086">{{Message}}</h1>
+       </div>
+          <div ng-controller="Details">
+            <table border="1" class="table table-bordered table-hover" style="color:#e75480 ">
+              <tr>
+                <th>Order id</th>
+                <th>Placed on</th>
+                <th>Status</th>
+                <th>Total Value</th>
+                <th>No. of Items</th>
+                <th>Edit</th>
+              </tr>
+              <tr ng-repeat="o in Orders">
+                <td>{{o.order_id}}</td>
+                <td>{{o.place_on_date}}</td>
+                <td>{{o.order_status}}</td>
+                <td>{{o.total_value|currency}}</td>
+                <td>{{o.no_of_items}}</td>
+                <td><button class="btn btn-primary">Details</button>&nbsp;&nbsp;<button class="btn btn-danger">Delete</button></td>
+              </tr>
+            </table>
+          </div>
+
+    </div>
+
+
+
+</body>
+</html>

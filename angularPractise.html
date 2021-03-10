@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular/angular.min.js"></script>
+	<script type="text/javascript" src="first.js"></script>
+</head>
+<body >
+	<div ng-controller="MyCon">
+		<h1>{{Message}}</h1>
+	</div>
+	<!-- <input type="number" name="" ng-model="x"><br>
+	<input type="text" name="" ng-model="s">
+	<div ng-controller="Details">
+		<table border="1">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Salary</th>
+				<th>Gender</th>
+			</tr>
+			<tr ng-repeat="Emp in Employee | limitTo:x
+ | filter:s">
+				<td>{{Emp.Id}}</td>
+				<td>{{Emp.Name | uppercase}}</td>
+				<td>{{Emp.Salary | currency}}</td>
+				<td>{{Emp.Gender}}</td>
+			</tr>
+		</table>
+	</div> -->
+	<div ng-controller="Tech">
+		<table border="1">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Likes</th>
+				<th>Dislikes</th>
+				<th>Likes / Dislikes</th>
+			</tr>
+			<tr ng-repeat="t in Technology">
+				<td>{{t.Id}}</td>
+				<td>{{t.Name }}</td>
+				<td>{{t.Likes}}</td>
+				<td>{{t.Dislikes}}</td>
+				<td><button ng-click="inclikes(t)">Likes</button><button ng-click="incdilikes(t)">Dislikes</button></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
